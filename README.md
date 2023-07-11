@@ -15,4 +15,4 @@ npm run dev
 # Replace: 
 In backend/index.js, on line 17, replace `process.env.PRIVATE_KEY` with your private key.
 In frontend/src/chatspage.jsx, on line 7, replace `projectId={import.meta.env.VITE_CHAT_ENGINE_PROJECT_ID}` with your project ID.
-You can obtain the project ID when you create a project in ChatEngine.io.
+You can obtain the project ID when you create a project in ##[ChatEngine.io](https://chatengine.io/)https://chatengine.io/.
