@@ -16,3 +16,13 @@ npm run dev
 In backend/index.js, on line 17, replace `process.env.PRIVATE_KEY` with your private key.
 In frontend/src/chatspage.jsx, on line 7, replace `projectId={import.meta.env.VITE_CHAT_ENGINE_PROJECT_ID}` with your project ID.
 You can obtain the project ID when you create a project in # [ChatEngine] (https://chatengine.io/)https://chatengine.io/.
+
+
+# Docker Image
+react-node-js-chat-app_frontend
+react-node-js-chat-app_backend
+
+
+# Docker Build tags
+react-node-js-chat-app_frontend:latest
+react-node-js-chat-app_backend:latest

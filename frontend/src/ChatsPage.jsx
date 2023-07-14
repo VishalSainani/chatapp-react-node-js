@@ -1,6 +1,9 @@
 import { PrettyChatWindow } from "react-chat-engine-pretty";
 
 const ChatsPage = (props) => {
+
+    console.log("env", import.meta.env.VITE_CHAT_ENGINE_PROJECT_ID)
+
     return (
         <div className="background">
             <PrettyChatWindow

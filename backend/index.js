@@ -13,6 +13,8 @@ app.get("/", async (req, res) => {
 
 
 app.post("/authenticate", async (req, res) => {
+    console.log("env backend", process.env.PRIVATE_KEY)
+
     const { username } = req.body;
     // Get or create user on Chat Engine!
     try {
