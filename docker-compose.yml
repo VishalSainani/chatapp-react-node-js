@@ -2,6 +2,7 @@ version: '3.8'
 services:
   backend:
     image: vishalsainani/my-chat-app_backend:latest
+    build: ./backend
     container_name: api_backend
     ports:
       - '4000:4000'
@@ -10,6 +11,7 @@ services:
       - ./app/node_modules
   frontend:
     image: vishalsainani/my-chat-app_frontend:latest
+    build: ./frontend
     container_name: client_frontend
     ports:
       - '5173:5173'
