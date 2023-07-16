@@ -21,11 +21,14 @@ app.post("/authenticate", async (req, res) => {
         const r = await axios.put(
             "https://api.chatengine.io/users/",
             { username: username, secret: username, first_name: username },
-            { headers: { "Private-Key": process.env.PRIVATE_KEY } } 
+            { headers: { "Private-Key": process.env.PRIVATE_KEY } }
 
-        );
+        )
+        console.log("ok", r);
         return res.status(r.status).json(r.data);
     } catch (e) {
+        console.log("not ok", e);
+
         return res.status(e.response.status).json(e.response.data);
     }
 });
