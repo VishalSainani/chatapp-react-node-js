@@ -2,8 +2,6 @@ version: '3.8'
 services:
   backend:
     build: ./backend
-    env_file:
-      - /home/ubuntu/chatapp-react-node-js/backend/.env.local
     container_name: api_backend
     ports:
       - '4000:4000'
